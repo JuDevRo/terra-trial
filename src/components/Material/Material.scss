@@ -1,0 +1,158 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.material {
+    width: 100%;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.material__h2 {
+    display: flex;
+    max-width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    text-align: center;
+    margin: 5rem 2rem 3rem 2rem;
+    height: 76px;
+
+    @include respond-to(desktop) {
+        font-size: 40px;
+        margin: 10rem 0 4rem 0
+    }
+}
+
+.material__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    @include respond-to(desktop) {
+        flex-direction: row;
+    }
+}
+
+.material__post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 344px;
+
+    @include respond-to(tablet) {
+        width: 400px;
+    }
+    
+    @include respond-to(desktop) {
+        width: 276px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+
+.material__image {
+    height: 362px;
+    width: 344px;
+    position: relative;
+    background-size: cover;
+    background-position: center; 
+    color: $color-primary; 
+
+    @include respond-to(tablet) {
+        height: 422px;
+        width: 400px;
+    }
+
+    @include respond-to(desktop) {
+        width: 276px;
+        height: 362px;
+    }
+}
+
+.material__type {
+    position: absolute;
+    display: flex;
+    background-color: $color-button-second;
+    height: 29px;
+    width: 58px;
+    border-radius: 19px;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    &-b {
+        background-color: $color-button-first;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 12px;
+        height: 39px;
+        width: 68px;
+    }
+}
+
+.material_epigraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.material__date {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 1rem;
+
+    @include respond-to(tablet) {
+        font-size: 12px;
+    }
+
+}
+
+.material__imgtitle {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 21px;
+
+    @include respond-to(tablet) {
+        font-size: 16px;
+    }
+}
+
+.material__blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.material__button {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: $color-button-first;
+    height: 60px;
+    width: 149px;
+    text-decoration: none;
+    color: $color-primary;
+    border: none;
+}
